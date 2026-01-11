@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TIRAMISU - Clips</title>
+  <link rel="stylesheet" href="styles1.css">
+  
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-left"><span class="brand-name">TIRAMISU - Clips</span></div>
+  <ul class="navbar-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Clips.html">Clips</a></li>
+    <li><a href="Sobre.html">Sobre</a></li>
+  </ul>
+</nav>
+
+<div class="filters-navbar">
+  <div class="filters-content">
+
+    <div class="filters-box">
+      <h3>Filtros</h3>
+
+      <label>Categoria</label>
+      <select id="categoryFilter">
+        <option value="all">Tudo</option>
+        <option value="Gameplay">Gameplay</option>
+        <option value="Momentos">Momentos</option>
+        <option value="Fails">Fails</option>
+      </select>
+
+      <label>De</label>
+      <input type="date" id="dateStart" max="9999-12-31" min="0001-01-01">
+
+      <label>Até</label>
+     <input type="date" id="dateEnd" max="9999-12-31" min="0001-01-01">
+    </div>
+
+  </div>
+</div>
+
+<div class="clips-page" id="clipsWrapper">
+
+  <div class="clip-card" data-category="Gameplay" data-date="2025-12-12">
+    <video controls><source src="video1.mp4" type="video/mp4"></video>
+    <p class="title">Clip 1</p>
+    <p class="description">Clip de exemplo para as funcionalidades do Website.</p>
+    <p class="tags">Categoria: Gameplay | Tags: Divertido, Épico</p>
+  </div>
+
+  <div class="clip-card" data-category="Momentos" data-date="2025-12-11">
+    <video controls><source src="video1.mp4" type="video/mp4"></video>
+    <p class="title">Clip 2</p>
+    <p class="description">Clip de exemplo para as funcionalidades do Website.</p>
+    <p class="tags">Categoria: Momentos | Tags: Engraçado, Surpresa</p>
+  </div>
+
+  <div class="clip-card" data-category="Fails" data-date="2025-12-10">
+    <video controls><source src="video1.mp4" type="video/mp4"></video>
+    <p class="title">Clip 3</p>
+    <p class="description">Clip de exemplo para as funcionalidades do Website.</p>
+    <p class="tags">Categoria: Fails | Tags: Épico, Fail</p>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <h3>TIRAMISU</h3>
+    <p>Clips • Momentos • Conteúdo</p>
+
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Clips.html">Clips</a></li>
+      <li><a href="Sobre.html">Sobre</a></li>
+    </ul>
+
+    <span class="footer-copy">© 2025 TIRAMISU </span>
+  </div>
+</footer>
+
+
+<script src="javascript.js"></script>
+</body>
+</html>
